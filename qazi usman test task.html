@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterShip Test</title>
+
+
+    <style>
+        .box {
+            width: 250px;
+            height: 250px;
+        }
+
+        #one {
+            background-color: red;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+
+        #two {
+            background-color: blue;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+        }
+
+        #three {
+            background-color: green;
+            position: absolute;
+            top: 128px;
+            left: 127px;
+        }
+
+        #four {
+            background-color: black;
+            position: absolute;
+            top: 180px;
+            left: 187px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="one" onclick='one()'></div>
+    <div class="box" id="two" onclick='two()'></div>
+    <div class="box" id="three" onclick='three()'></div>
+    <div class="box" id="four" onclick='four()'></div>
+
+    
+
+
+    <script>
+        
+
+            function one() {
+            let divToDelete = document.getElementById('one');
+            divToDelete.nextElementSibling.remove()
+            divToDelete.remove();
+        }
+        
+        
+        function two() {
+            let divToDeletetwo=document.getElementById('two');
+            divToDeletetwo.nextElementSibling.remove()
+            divToDeletetwo.remove();
+        }
+        
+        function three() {
+            let divToDeleteThree=document.getElementById('three');
+            divToDeleteThree.nextElementSibling.remove();
+            divToDeleteThree.remove();
+            
+        }
+        
+        function four() {
+            let divToDeleteFour=document.getElementById('four');
+            divToDeleteFour.remove();
+        }
+
+
+            
+         
+       
+    </script>
+
+</body>
+
+</html>
